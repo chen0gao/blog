@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/blog/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Gemini',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="The modification record of Next theme. Including adding plugins, change css, modify page features.">
+<meta name="keywords" content="Hexo,Next">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Next Theme Modification">
+<meta property="og:url" content="https://chen0gao.github.io/blog/2018/08/21/Next-Theme-Modification/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="The modification record of Next theme. Including adding plugins, change css, modify page features.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-08-21T20:29:06.186Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Next Theme Modification">
+<meta name="twitter:description" content="The modification record of Next theme. Including adding plugins, change css, modify page features.">
+
+
+
+
+
+
+  <link rel="canonical" href="https://chen0gao.github.io/blog/2018/08/21/Next-Theme-Modification/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Next Theme Modification | Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/blog/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="http:/cgao.tk/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/blog/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/blog/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://chen0gao.github.io/blog/blog/2018/08/21/Next-Theme-Modification/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chen Gao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Next Theme Modification
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-08-21 02:13:19 / Modified: 16:29:06" itemprop="dateCreated datePublished" datetime="2018-08-21T02:13:19-04:00">2018-08-21</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+		  
+			<!-- /Modified/ Put tags on the top of documents -->
+		  
+            <span class="post-tagList" >
+            
+              <span class="post-meta-divider">|</span>
+            
+			  
+              <span class="post-meta-item-icon">
+                <i class="fa fa-tag"></i>
+              </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/tags/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+                
+                  , 
+                
+			  
+              <span class="post-meta-item-icon">
+                <i class="fa fa-tag"></i>
+              </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/tags/Next/" itemprop="url" rel="index"><span itemprop="name">Next</span></a></span>
+                
+			  
+             </span>
+		  
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">5.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">5 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>The modification record of Next theme. Including adding plugins, change css, modify page features.<br><a id="more"></a></p>
+<p><hr></p>
+<h1 id="Guides"><a href="#Guides" class="headerlink" title="Guides"></a>Guides</h1><p>. <a href="https://github.com/iissnan/hexo-theme-next/wiki" target="_blank" rel="noopener">Offical Hexo Next Setup Guide</a><br>. <a href="https://hexo.io/docs/front-matter.html#Categories_&amp;_Tags" target="_blank" rel="noopener">Hexo: Front-matter</a></p>
+<p><br></p>
+<h1 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h1><h2 id="Unlock-basic-features"><a href="#Unlock-basic-features" class="headerlink" title="Unlock basic features"></a>Unlock basic features</h2><p>. <a href="https://github.com/iissnan/hexo-theme-next/wiki/%E5%88%9B%E5%BB%BA-%22%E5%85%B3%E4%BA%8E%E6%88%91%22-%E9%A1%B5%E9%9D%A2" target="_blank" rel="noopener">Create about</a><br>. <a href="https://github.com/iissnan/hexo-theme-next/wiki/%E5%88%9B%E5%BB%BA%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2" target="_blank" rel="noopener">Create tags</a><br>. <a href="https://github.com/iissnan/hexo-theme-next/wiki/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE%E4%BA%91%E9%A1%B5%E9%9D%A2" target="_blank" rel="noopener">Create categories</a><br>. <a href="https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E5%AE%9A%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E4%B8%BB%E9%A2%98" target="_blank" rel="noopener">Customize highlight theme</a></p>
+<h2 id="Only-Enable-the-appearing-animation-for-the-sidebar"><a href="#Only-Enable-the-appearing-animation-for-the-sidebar" class="headerlink" title="Only Enable the appearing animation for the sidebar"></a>Only Enable the appearing animation for the sidebar</h2><figure class="highlight dsconfig"><figcaption><span class="fileDir">hexo\themes\next\</span><span class="caption">_config</span><span class="suffix">.yml</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></div><div class="code"><pre><div class="line"><span class="comment"># post_block: fadeIn</span></div><div class="line"><span class="comment"># post_header: slideDownIn</span></div><div class="line"><span class="comment"># post_body: slideDownIn</span></div><div class="line"><span class="comment"># coll_header: slideLeftIn</span></div><div class="line"><span class="comment"># Only for Pisces | Gemini.</span></div><div class="line"><span class="string">sidebar:</span> <span class="string">slideUpIn</span></div></pre></div></div></figure>
+<h2 id="Enable-Math-Equations-Render-Support"><a href="#Enable-Math-Equations-Render-Support" class="headerlink" title="Enable Math Equations Render Support"></a>Enable Math Equations Render Support</h2><figure class="highlight dsconfig"><figcaption><span class="fileDir">hexo\themes\next\</span><span class="caption">_config</span><span class="suffix">.yml</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line"><span class="string">math:</span></div><div class="line">  <span class="string">enable:</span> <span class="string">true</span></div></pre></div></div></figure>
+<h2 id="Enable-copy-code-area"><a href="#Enable-copy-code-area" class="headerlink" title="Enable copy code area"></a>Enable copy code area</h2><figure class="highlight dsconfig"><figcaption><span class="fileDir">hexo\themes\next\</span><span class="caption">_config</span><span class="suffix">.yml</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line"><span class="string">copy_button:</span></div><div class="line">  <span class="string">enable:</span> <span class="string">true</span></div><div class="line"><span class="string"> </span> <span class="comment"># Show text copy result</span></div><div class="line">  <span class="string">show_result:</span> <span class="string">true</span></div></pre></div></div></figure>
+<h2 id="Enable-search"><a href="#Enable-search" class="headerlink" title="Enable search"></a>Enable search</h2><p>Install Dependencies<br><figure class="highlight dsconfig"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line"><span class="string">npm </span><span class="string">install </span>:<span class="string">hexo-generator-</span><span class="string">searchdb </span><span class="built_in">--save</span></div></pre></div></div></figure></p>
+<figure class="highlight dsconfig"><figcaption><span class="fileDir">hexo\themes\next\</span><span class="caption">_config</span><span class="suffix">.yml</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></div><div class="code"><pre><div class="line"><span class="string">local_search:</span></div><div class="line">  <span class="string">enable:</span> <span class="string">true</span></div><div class="line"><span class="string"> </span> <span class="comment"># if auto, trigger search by changing input</span></div><div class="line">  <span class="comment"># if manual, trigger search by pressing enter key or search button</span></div><div class="line">  <span class="string">trigger:</span> <span class="string">auto</span></div><div class="line"><span class="string"> </span> <span class="comment"># show top n results per article, show all results by setting to -1</span></div><div class="line">  <span class="string">top_n_per_article:</span> 1</div><div class="line">  <span class="comment"># unescape html strings to the readable one</span></div><div class="line">  <span class="string">unescape:</span> <span class="string">false</span></div></pre></div></div></figure>
+<h2 id="Enable-Symbols-Count-Time"><a href="#Enable-Symbols-Count-Time" class="headerlink" title="Enable Symbols Count Time"></a>Enable Symbols Count Time</h2><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">npm install hexo-symbols-count-time --save</div></pre></div></div></figure>
+<figure class="highlight dsconfig"><figcaption><span class="fileDir">hexo\</span><span class="caption">_config</span><span class="suffix">.yml</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line"><span class="string">symbols_count_time:</span></div><div class="line">  <span class="string">symbols:</span> <span class="string">true</span></div><div class="line"><span class="string"> </span> <span class="string">time:</span> <span class="string">true</span></div><div class="line"><span class="string"> </span> <span class="string">total_symbols:</span> <span class="string">true</span></div><div class="line"><span class="string"> </span> <span class="string">total_time:</span> <span class="string">true</span></div></pre></div></div></figure>
+<figure class="highlight dsconfig"><figcaption><span class="fileDir">hexo\themes\next\</span><span class="caption">_config</span><span class="suffix">.yml</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></div><div class="code"><pre><div class="line"><span class="string">symbols_count_time:</span></div><div class="line">  <span class="string">separated_meta:</span> <span class="string">true</span></div><div class="line"><span class="string"> </span> <span class="string">item_text_post:</span> <span class="string">true</span></div><div class="line"><span class="string"> </span> <span class="string">item_text_total:</span> <span class="string">true</span></div><div class="line"><span class="string"> </span> <span class="string">awl:</span> 4</div><div class="line">  <span class="string">wpm:</span> <span class="string">275</span></div></pre></div></div></figure>
+<h2 id="HEXO下的语法高亮拓展修改"><a href="#HEXO下的语法高亮拓展修改" class="headerlink" title="HEXO下的语法高亮拓展修改"></a>HEXO下的语法高亮拓展修改</h2><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">```[language] [:title] [lang:language] [line_number:(true|false)] [first_line:number] [mark:#,#-#] [diff:true|false] [url:http...]</div><div class="line">code snippet</div><div class="line">```</div></pre></div></div></figure>
+<p>出处&amp;安装：<a href="https://www.ofind.cn/blog/HEXO/HEXO%E4%B8%8B%E7%9A%84%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%E6%8B%93%E5%B1%95%E4%BF%AE%E6%94%B9.html" target="_blank" rel="noopener">HEXO下的语法高亮拓展修改</a></p>
+<h2 id="Move-tags-to-the-top-and-display-them-on-the-index-page"><a href="#Move-tags-to-the-top-and-display-them-on-the-index-page" class="headerlink" title="Move tags to the top, and display them on the index page"></a>Move tags to the top, and display them on the index page</h2><p>add the following lines (red):<br><figure class="highlight html"><figcaption><span class="fileDir">hexo\themes\next\layout\_macro\</span><span class="caption">post</span><span class="suffix">.swig</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></div><div class="code"><pre><div class="line">          &#123;% if post.categories and post.categories.length and theme.post_meta.categories %&#125;</div><div class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-category"</span> &gt;</span></div><div class="line">            &#123;% if theme.post_meta.created_at or theme.post_meta.updated_at %&#125;</div><div class="line">              <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-meta-divider"</span>&gt;</span>|<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">            &#123;% endif %&#125;</div><div class="line">              <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-meta-item-icon"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-folder-o"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">              <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">              &#123;% if theme.post_meta.item_text %&#125;</div><div class="line">                <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-meta-item-text"</span>&gt;</span>&#123;&#123; __('post.in') &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">              &#123;% endif %&#125;</div><div class="line">              &#123;% for cat in post.categories %&#125;</div><div class="line">                <span class="tag">&lt;<span class="name">span</span> <span class="attr">itemprop</span>=<span class="string">"about"</span> <span class="attr">itemscope</span> <span class="attr">itemtype</span>=<span class="string">"http://schema.org/Thing"</span>&gt;</span>&#123;#</div><div class="line">                #&#125;<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; url_for(cat.path) &#125;&#125;"</span> <span class="attr">itemprop</span>=<span class="string">"url"</span> <span class="attr">rel</span>=<span class="string">"index"</span>&gt;</span>&#123;#</div><div class="line">                  #&#125;<span class="tag">&lt;<span class="name">span</span> <span class="attr">itemprop</span>=<span class="string">"name"</span>&gt;</span>&#123;&#123; cat.name &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span>&#123;#</div><div class="line">                #&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span>&#123;#</div><div class="line">              #&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"></div><div class="line">                &#123;% set cat_length = post.categories.length %&#125;</div><div class="line">                &#123;% if cat_length &gt; 1 and loop.index !== cat_length %&#125;</div><div class="line">                  &#123;&#123; __('symbol.comma') &#125;&#125;</div><div class="line">                &#123;% endif %&#125;</div><div class="line">              &#123;% endfor %&#125;</div><div class="line">            <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">          &#123;% endif %&#125;</div><div class="line">		  </div><div class="line diff-addition">			<span class="comment">&lt;!-- /Modified/ Put tags on the top of documents --&gt;</span></div><div class="line diff-addition">		  &#123;% if post.tags and post.tags.length %&#125;</div><div class="line diff-addition">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-tagList"</span> &gt;</span></div><div class="line diff-addition">            &#123;% if theme.post_meta.created_at or theme.post_meta.updated_at %&#125;</div><div class="line diff-addition">              <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-meta-divider"</span>&gt;</span>|<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line diff-addition">            &#123;% endif %&#125;</div><div class="line diff-addition">			  &#123;% for tag in post.tags %&#125;</div><div class="line diff-addition">              <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-meta-item-icon"</span>&gt;</span></div><div class="line diff-addition">                <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-tag"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line diff-addition">              <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line diff-addition">                <span class="tag">&lt;<span class="name">span</span> <span class="attr">itemprop</span>=<span class="string">"about"</span> <span class="attr">itemscope</span> <span class="attr">itemtype</span>=<span class="string">"http://schema.org/Thing"</span>&gt;</span>&#123;#</div><div class="line diff-addition">                #&#125;<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123; url_for(tag.path) &#125;&#125;"</span> <span class="attr">itemprop</span>=<span class="string">"url"</span> <span class="attr">rel</span>=<span class="string">"index"</span>&gt;</span>&#123;#</div><div class="line diff-addition">                  #&#125;<span class="tag">&lt;<span class="name">span</span> <span class="attr">itemprop</span>=<span class="string">"name"</span>&gt;</span>&#123;&#123; tag.name &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span>&#123;#</div><div class="line diff-addition">                #&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span>&#123;#</div><div class="line diff-addition">              #&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line diff-addition">                &#123;% if post.tags.length &gt; 1 and loop.index !== post.tags.length %&#125;</div><div class="line diff-addition">                  &#123;&#123; __('symbol.comma') &#125;&#125;</div><div class="line diff-addition">                &#123;% endif %&#125;</div><div class="line diff-addition">			  &#123;% endfor %&#125;</div><div class="line diff-addition">             <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line diff-addition">		  &#123;% endif %&#125;</div></pre></div></div></figure></p>
+<p><br></p>
+<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="Blog-background-color"><a href="#Blog-background-color" class="headerlink" title="Blog background color"></a>Blog background color</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_variables\</span><span class="caption">Gemini</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line"><span class="variable">$body</span>-bg-<span class="attribute">color</span>                    = <span class="number">#eee</span></div></pre></div></div></figure>
+<h2 id="Back-to-top-color"><a href="#Back-to-top-color" class="headerlink" title="Back to top color"></a>Back to top color</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_variables\</span><span class="caption">base</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line"><span class="variable">$b2t</span>-bg-<span class="attribute">color</span>                 = <span class="number">#eee</span></div></pre></div></div></figure>
+<h2 id="Code-amp-Code-Blocks-color"><a href="#Code-amp-Code-Blocks-color" class="headerlink" title="Code &amp; Code Blocks color"></a>Code &amp; Code Blocks color</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_variables\</span><span class="caption">base</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line"><span class="variable">$code</span>-foreground                = <span class="variable">$black</span>-light</div><div class="line"><span class="comment">//$code-background                = $gainsboro</span></div></pre></div></div></figure>
+<h2 id="Site-title-color"><a href="#Site-title-color" class="headerlink" title="Site title color"></a>Site title color</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_schemes\Pisces\</span><span class="caption">_brand</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line"><span class="attribute">color</span>: white;</div><div class="line"><span class="attribute">background</span>: <span class="variable">$black</span>-deep;</div></pre></div></div></figure>
+<figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_common\components\header\</span><span class="caption">site-meta</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line"><span class="comment">//color: #141e1e;</span></div></pre></div></div></figure>
+<h2 id="Local-Search-box-color"><a href="#Local-Search-box-color" class="headerlink" title="Local Search box color"></a>Local Search box color</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_common\components\third-party\</span><span class="caption">localsearch</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line"><span class="attribute">background-color</span>: rgba(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>)</div></pre></div></div></figure>
+<h2 id="Post-title-underline-color"><a href="#Post-title-underline-color" class="headerlink" title="Post title underline color"></a>Post title underline color</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_common\components\post\</span><span class="caption">post-title</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line"><span class="attribute">background-color</span>: <span class="number">#000</span>;</div></pre></div></div></figure>
+<h2 id="Meta-item-text-color"><a href="#Meta-item-text-color" class="headerlink" title="Meta item text color"></a>Meta item text color</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_common\components\post\</span><span class="caption">post-meta</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line"><span class="selector-tag">span</span> <span class="selector-class">.post-meta-item-text</span>, <span class="selector-tag">span</span> <span class="selector-tag">time</span>, <span class="selector-tag">span</span> <span class="selector-class">.post-meta-item-icon</span>, <span class="selector-class">.post-symbolscount</span> <span class="selector-tag">span</span> &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#636e72</span>;</div><div class="line">&#125;</div></pre></div></div></figure>
+<h2 id="Hyperlink-color"><a href="#Hyperlink-color" class="headerlink" title="Hyperlink color"></a>Hyperlink color</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\_common\components\post\</span><span class="caption">post-meta</span><span class="suffix">.styl</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></div><div class="code"><pre><div class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">p</span> <span class="selector-tag">a</span> &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#3498db</span>;</div><div class="line">  </div><div class="line">  &amp;:hover &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#2980b9</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></div></div></figure>
+<h2 id="Customize-css"><a href="#Customize-css" class="headerlink" title="Customize css"></a>Customize css</h2><figure class="highlight stylus"><figcaption><span class="fileDir">hexo\themes\next\source\css\</span><span class="caption">_custom</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line"><span class="comment">// Custom styles.</span></div><div class="line"><span class="selector-class">.someClass</span> &#123;</div><div class="line"></div><div class="line">&#125;</div></pre></div></div></figure>
+<figure class="highlight html"><figcaption><span class="caption">any post</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"someClass"</span>&gt;</span> Content <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div></pre></div></div></figure>
+<p><br></p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul>
+<li><a href="https://github.com/iissnan/hexo-theme-next/issues/380" target="_blank" rel="noopener">生成标签云之后，仍然是Cannot GET /tags/</a></li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+	<!--
+    <footer class="post-footer">
+     
+        <div class="post-tags">
+          
+            <a href="/blog/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/blog/tags/Next/" rel="tag"># Next</a>
+          
+        </div>
+      
+	  -->
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2018/08/20/My-First-Blog/" rel="next" title="My First Blog">
+                <i class="fa fa-chevron-left"></i> My First Blog
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2018/08/21/Hexo-Usage/" rel="prev" title="Hexo Usage">
+                Hexo Usage <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Chen Gao</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/blog/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/blog/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/chen0gao" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:cgao001@citymail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://cgao.tk/" target="_blank" title="Website"><i class="fa fa-fw fa-address-book"></i>Website</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Guides"><span class="nav-number">1.</span> <span class="nav-text">Guides</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Features"><span class="nav-number">2.</span> <span class="nav-text">Features</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Unlock-basic-features"><span class="nav-number">2.1.</span> <span class="nav-text">Unlock basic features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Only-Enable-the-appearing-animation-for-the-sidebar"><span class="nav-number">2.2.</span> <span class="nav-text">Only Enable the appearing animation for the sidebar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Enable-Math-Equations-Render-Support"><span class="nav-number">2.3.</span> <span class="nav-text">Enable Math Equations Render Support</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Enable-copy-code-area"><span class="nav-number">2.4.</span> <span class="nav-text">Enable copy code area</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Enable-search"><span class="nav-number">2.5.</span> <span class="nav-text">Enable search</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Enable-Symbols-Count-Time"><span class="nav-number">2.6.</span> <span class="nav-text">Enable Symbols Count Time</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HEXO下的语法高亮拓展修改"><span class="nav-number">2.7.</span> <span class="nav-text">HEXO下的语法高亮拓展修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Move-tags-to-the-top-and-display-them-on-the-index-page"><span class="nav-number">2.8.</span> <span class="nav-text">Move tags to the top, and display them on the index page</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS"><span class="nav-number">3.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Blog-background-color"><span class="nav-number">3.1.</span> <span class="nav-text">Blog background color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Back-to-top-color"><span class="nav-number">3.2.</span> <span class="nav-text">Back to top color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-amp-Code-Blocks-color"><span class="nav-number">3.3.</span> <span class="nav-text">Code &amp; Code Blocks color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Site-title-color"><span class="nav-number">3.4.</span> <span class="nav-text">Site title color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Local-Search-box-color"><span class="nav-number">3.5.</span> <span class="nav-text">Local Search box color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Post-title-underline-color"><span class="nav-number">3.6.</span> <span class="nav-text">Post title underline color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Meta-item-text-color"><span class="nav-number">3.7.</span> <span class="nav-text">Meta item text color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hyperlink-color"><span class="nav-number">3.8.</span> <span class="nav-text">Hyperlink color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Customize-css"><span class="nav-number">3.9.</span> <span class="nav-text">Customize css</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chen Gao</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Symbols count total: </span>
+    
+    <span title="Symbols count total">9k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Reading time total &asymp;</span>
+    
+    <span title="Reading time total">8 mins.</span>
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.4.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=6.4.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=6.4.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/blog/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
